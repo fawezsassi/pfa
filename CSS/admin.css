@@ -1,0 +1,50 @@
+header .logo{ font-size: 2rem; 
+    color: rgb(39, 68, 131); 
+    font-weight: bolder;
+     float: left;}
+
+
+
+
+a{   font-size: 1.3rem;
+    color: #01040a;
+    margin-left: 1.5rem;
+    text-decoration: none;}
+
+ a:hover{  color:#3957aec3;}      
+
+ header{
+	
+	top: 0; left: 0; right: 0;
+	background-color:#eff2f9c3;;
+	padding:1.6rem 5%;
+	display: flex;
+	align-items:center;
+    /*NAAML  espace binet head o lien*/
+	justify-content: space-between;
+	}
+
+.container{
+  display: flex;
+
+    }
+
+.crud{
+    text-decoration: none;
+color:rgb(14, 13, 16);
+margin-top: 20px;
+display: flex;
+font-size: 20px;
+margin-right: 120PX;
+font-style: italic;
+font-weight: bold;
+}
+
+#b{
+  color: rgb(30, 130, 88);  
+  font-size: 30px;
+  margin-top: 15px;
+  margin-right: 140PX;
+}
+
+         

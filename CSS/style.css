@@ -1,0 +1,563 @@
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:Verdana,Geneva,Tahoma,sans-serif;
+	outline:none;
+	border:none;
+	text-decoration:none;
+	text-transform:capitalize;	}
+html{font-size:60%;}  section{ padding: 20rem 10%;}
+header{
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	background:white;
+	padding:2rem 9%;
+	display: flex;
+	align-items:center;
+    /*NAAML  espace binet head o lien*/
+	justify-content: space-between;
+	box-shadow: 0 .5rem 1rem rgba(0, 0,0, 1);}
+header .logo{ font-size: 3rem; color: rgb(39, 68, 131); font-weight: bolder;}
+header .navbar a{
+        font-size: 2rem;
+        padding: 0 1.5rem;
+        color: black;}
+header .navbar a:hover{ color: #0b2506c3;}
+header .icons.a{   font-size: 4.5rem;
+                        color: #000000;
+                        margin-left: 1.5rem;}
+
+header .icons a:hover{  color:#0b2506c3;}
+header #toggler{display: none;}   
+ .fa-bars{
+        font-size: 6rem;
+        color: #333;
+        border-radius: .5rem;
+        padding:.5rem 1.5rem;
+        cursor:pointer;
+        border:1rem solid rgba(226, 40, 40, 0.927); 
+        display:none;}
+
+  /*normal mobile*/              
+@media  (max-width:450px) {
+    html{   font-size:67.5%;}
+         header{padding:2rem ;}
+            .home{width:1200px;
+            height: 700px;}
+         .about{   width: 900px;}
+         #best{  margin-left: 160px; }
+        .icons-conta{  width:1200px ;}
+         .products{  width:1200px ;}
+        .products .heading{  margin-right: 200px;}
+        .review{  width:1500px ; }
+        .h { transform: translateY(-10%);}
+        .contact{  width:1900px ;}
+        footer{  width:1200px ;}
+        .cpy_right{  width:1200px ;}
+    .row{  width:1200px ;}
+    #p{  font-size: 20px; }
+     #uu{   padding:0%;
+            font-size: 40px;}
+    #video{  
+         margin-left: 150px;}
+        #map{  
+        margin-right: 90px;} }
+
+/*tablette responsive*/
+
+@media (max-width:768px) {
+    html {width: 90%;}
+    header .fa-bars{ display: block;}
+     .navbar{
+    position: absolute;
+	top: 0; left: 0; right: 0;
+	background:#fff;
+    border: .1rem solid rgba(0, 0,0, 1);
+/*togler*/
+    clip-path: polygon(0 0,100% 0 , 100% 0, 0 0); }
+    header #toggler:checked .navbar{
+        clip-path: polygon(0 0,100% 0 ,100% 100% , 0 0);}
+    header .navbar a{
+        margin: 1.5em;
+        padding:1.5;
+         background: #fff;
+         border: 1rem solid rgba(0, 0,0, 1);
+         display: block;
+    }
+    .home .content h3{font-size: 2.5rem;}
+	.home .content span{font-size: 5rem;}
+    .icons-conta .icons h3{font-size: 2rem;}
+    .icons-conta .icons span{ font-size: 1.7rem;}
+.home{width:1700px;
+    height: 600px;}
+
+.about{   width: 1000px;}
+     .row{  width:1700px ;}
+     #p{  font-size: 20px;
+    gap: 2rem; }
+      #uu{  
+             padding:0%;
+             font-size: 40px;}
+             .w{  width:1700px ;}
+             .icons-conta{  width:1700px ;}
+        .review{  width:1700px ;}
+                 .h { transform: translateY(-10%);}
+                 .contact{  width:1500px ;}
+                 footer{  width:1500px ;}
+                 .cpy_right{  width:1500px ;}
+             .row{  width:1500px ;}}
+.home{ display: flex;
+          align-items: center;
+          min-width: 40vh;
+         background-image: url(../IMG/car.jpg)  ;
+         background-size: cover;
+         background-position: center; }
+.home .content{
+	max-width: 60rem;
+    background: none;
+    margin-right: 400px;}
+.home .content h3{
+	font-size: 6rem;
+	color: #0b2506c3;
+    background: none;
+}
+/*para titlle */
+.home .content span{
+	font-size: 3.5rem;
+	color: #333;
+	padding: 1rem 0;
+	line-height: 1.5;
+    background: none;}
+.home .content p{
+	font-size: 1.5rem;
+	color: #999;
+	padding: 1rem 0;
+	line-height: 1.5;
+    background: none; }
+/* bouton*/
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: 2rem 8rem;
+    cursor: pointer;
+    font-size: 1.7rem; }
+    .btn:hover{ background: #0b2506c3; }
+     .row{
+        display: flex;
+        align-items: center;
+        /*bch t3ml espace binet img et para*/
+        gap: 2rem;
+        padding: 2rem 0;
+        padding-bottom: 3rem; }
+    #red{ width:700px;}
+/*about us */
+       .abs{
+        font-size: 40px;
+        color: #333;}
+     .abcon {
+        margin-left: 50px;
+        width: 500px;
+        flex:1 1 40rem;
+        margin-bottom: 120px;
+        font-size: 1.5rem;
+        color: #999;}
+         .p{
+            font-size: 1.5rem;
+            color: #999;
+            padding: 5rem 0;
+            padding-top: 3rem;
+            line-height: 1.5rem;
+            background: none;
+        }
+/*why chose us*/
+.whychose{  height: 700px;
+    background:  #161c34;}
+.icons-contawhy{
+   margin-left: 90px;
+    display: flex;
+    /*icon hatineha f ligne wahda mabaathom*/
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+.icons-contawhy .icons{
+    border: 1rem  rgba(0, 0,0, 1);
+    padding: 2rem;
+    /*ketiba rak7neha fouk tal3et  y*/
+    transform: translateY(-50%);
+    width: 30px;
+    align-items: center;
+    /*bch mayjiwsh*/
+    flex:1 1 25rem; }
+.icons-contawhy .icons img{
+    height: 5rem;
+    margin-left: 80px;
+    width: 100px;
+      height: 100px;}
+.we{  text-align: center;
+        font-size: 4rem ;
+        color:white;
+        padding: 1rem;
+        margin: 2rem 0;
+        margin-left: 370px;
+        background: #f36b2a;
+        transform: translateY(-160%);
+        width: 500px;}
+        
+.icons-contawhy .icons h3{
+    color:white;
+    padding-top:  3rem;
+    padding-bottom:  .7rem;
+    font-size: 2rem;}
+
+    .btnwhy{
+        display: inline-block;
+        transform: translateY(-200%);
+        margin-top: 1rem;
+        border-radius: 5rem;
+        background: #f36b2a;
+        color: #fff;
+        padding: 2rem 8rem;
+        cursor: pointer;
+        margin-left: 500px;
+        font-size: 1.7rem;}
+        .btnwhy:hover{ background: #0b2506c3; }
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 400px; }
+.review .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0,0, 1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+   position: relative;
+    border: .1rem solid rgba(0, 0,0, 1);}
+
+ i{
+ color: black;
+ font-size: 2rem;
+}
+.review .box-container .box p{
+    color: rgb(128, 121, 121);
+    font-size: 1.5rem;
+    line-height: 1.5;
+padding-top: 2rem;}
+.review .box-container{
+    background: white;
+border-radius: 10px;}
+.user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;}
+#cm{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;}
+  h3{
+    font-size: 2rem;
+    color: #333;}
+.review{
+    background: rgb(68, 68, 71);}
+
+#bcc{
+    display: flex;
+    gap:1.5rem;
+}
+/*****/
+.contact {
+    background: #01030b;}
+
+.content .row {
+    display: flex;
+    flex-wrap:wrap-reverse;
+    gap: 3.5rem;
+    align-items: center;
+      }
+.content .row form{
+    
+    
+     box-shadow: 0 .5rem 1.5rem rgba(0, 0,0, 1);
+     border: .1rem  rgba(0, 0,0, 1);
+     background: #fff;
+     border-radius: .5rem;
+    
+          }
+
+   .btnn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #f36b2a;
+    color:white ;
+    padding: 2rem 8rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin-left: 20px;
+      width: 280px;}
+      .btnn:hover{
+        background: #0b2506c3;
+    }
+   #map{
+      border-radius: 10%;
+      width:450px;
+      height:300px;}
+       
+
+
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: 0.3rem rgba(0, 0,0, 1);
+    border-radius: .5rem;
+    margin: 20px;
+     width: 70%;}
+    
+      .he{
+        text-align: center;
+        font-size: 7rem ;
+        padding: 1rem;
+        margin: .2rem 0;
+       
+        
+       
+    }
+    .h{
+        text-align: center;
+        font-size: 5rem ;
+        padding: 1rem;
+       margin-bottom: 70px;
+       transform: translateY(-40%);
+    }
+  
+        
+       
+    
+        .he span{
+            color:rgb(182, 68, 23);
+           
+        }
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;}
+/*****/
+
+    footer {
+        background: #01030b;
+        border-top: solid rgba(255,255,255,.2) 1px;
+        padding: 75px 0;
+    }
+    
+    footer h3 {
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+        padding: 0;
+        border-bottom: solid #f36b2a 1px;
+        float: left;
+    }
+    
+    h4.sousheading {
+        font-size: 25px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-top: 40px;
+        padding: 0;
+        letter-spacing: 0.2px;
+        margin-bottom: 10px;
+    }
+    
+    .social_links {
+        float: right;
+        margin-top: 14px;
+    }
+    
+    ul.social_links li {
+        margin-left: 10px;
+        float: right;
+    }
+    
+    ul.social_links li a {
+        color: #f36b2a;
+        width: 40px;
+        height: 40px;
+        border: solid #f36b2a 1px;
+        float: left;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 100%;
+        font-size: 18px;
+    }
+    
+    ul.social_links li a:hover,
+    ul.social_links li a:focus {
+        background: #f36b2a;
+        color: #fff;
+    }
+    
+    .subribe_form input {
+        max-width: 305px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    
+    .mmenu {
+        margin-top: 14px;
+    }
+    
+    .mmenu ul {
+        list-style: none;
+        font-size: 17px;
+        line-height: 35px;
+        float: left;
+        width: 100%;
+    }
+    
+    .mmenu ul li {
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        float: left;
+        width: 100%;
+        position: relative;
+        padding: 0 0 0 20px;
+    }
+    
+    .mmenu ul li::after {
+        width: 10px;
+        height: 10px;
+        background: #f36b2a;
+        content: "";
+        position: absolute;
+        left: 0;
+        border-radius: 100%;
+        top: 13px;
+    }
+    
+    .mmenu ul li a {
+        color: #fff;
+    }
+    
+    .cont_footer {
+        padding-top: 15px;
+    }
+    
+    .cont_footer p {
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        float: left;
+        width: 100%;
+        position: relative;
+        padding: 0;
+        font-size: 17px;
+        color: #fff;
+    }
+    
+    .cont_footer p strong {
+        color: #fff;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    
+    .cpy_right p {
+        text-align: center;
+        font-size: 15px;
+        margin-left: 450px;
+        margin-top: 5px;
+        margin-bottom: 0%;
+    }
+    .cpy_right {
+        height: 10px;
+        
+     }
+    .cpy_right p a:hover,.cpy_right p a:focus {
+        color: #f36b2a;
+        text-decoration: underline;
+    }
+
+
+
+    .field input {
+        width: 100%;
+        border: none;
+        background: #e8e8e8;
+        min-height: 52px;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    
+    .field textarea {
+        width: 100%;
+        border: none;
+        font-size: 14px;
+        background: #e8e8e8;
+        min-height: 52px;
+        padding: 15px 20px;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 10px 0;
+        min-height: 110px;
+    }
+    
+    button.submit_bt {
+        width: 165px;
+        height: 51px;
+        background: #f36b2a;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: ease all 0.5s;
+    }
+    .submit_btt{
+        color: #e8e8e8;
+        font-size: large;
+    }
+    button.submit_bt:hover,
+    button.submit_bt:focus {
+        background: #111;
+        color: #fff;
+    }
+    .c{
+        margin-left: 80px;}
+    #ffff{
+        width: 39px;}
+
+
+        #map {
+            height: 100%;
+            min-height: 480px;
+        }
+        
+        .contact_form {
+            background: #fff;
+            padding: 35px 45px;
+        }
+        
+
+
+
+
+
+
+    
+
+
+
+
+
+
+        

@@ -1,0 +1,130 @@
+
+body {
+	background: url(../IMG/giphy.gif);
+   background-size: 1550px;}
+
+.container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+ 
+}
+
+.container .content{
+   text-align: center;
+}
+
+.container .content h3{
+   font-size: 30px;
+   color:#fdf9f9;
+}
+
+.container .content h3 span{
+   background: rgb(20, 220, 63);
+   color:#fff;
+   border-radius: 5px;
+   padding:0 15px;
+}
+
+.container .content h1{
+   font-size: 50px;
+   color:#f1e8e8;
+}
+
+.container .content h1 span{
+   color:rgb(20, 220, 133);
+}
+
+.container .content p{
+   font-size: 25px;
+   margin-bottom: 20px;
+}
+
+.container .content .btn{
+   display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: #aa5e5e;
+   color:#fff;
+   margin:0 5px;
+   text-transform: capitalize;
+}
+
+
+
+.form-container form{
+   padding:20px;
+   border-radius: 5px;
+   
+   background:  #17244d;
+   text-align: center;
+   width: 500px;
+   margin-left: 550px;
+   margin-top: 150px;
+
+}
+
+.form-container form h3{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color:#e9e0e0;
+}
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #e7d9d9;
+   border-radius: 5px;
+}
+
+.form-container form select option{
+   background: #8a6666;
+}
+
+.form-container form .form-btn{
+   background: #9294c4;
+   color:rgb(14, 13, 13);
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+   background: rgb(141, 137, 138);
+   color:#201111;
+}
+.login_btn{
+color: rgb(62, 27, 27);
+font-size: 25px;
+
+font-weight: bold;
+
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#f2e8e8;
+}
+
+.form-container form p a{
+   color:#9294c4;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: crimson;
+   color:#1e0b0b;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+
